@@ -3,11 +3,12 @@ import { Fragment } from "react";
 import { TwitterFollowCard }  from "./components/TwitterFollowCard.jsx";
 
 export const App = () => {
+    const format = (userName) => `@${userName}`
     return (
         <Fragment>
-            <TwitterFollowCard fullName="Victor Andres Ponce" userName="@victorandresp" />
-            <TwitterFollowCard fullName="Miguel Angel Duran" userName="@midudev" />
-            <TwitterFollowCard fullName="Kai Cenat" userName="@kaicenat" />
+            <TwitterFollowCard formatUserName={format} fullName="Victor Andres Ponce" userName="victorandresp" />
+            <TwitterFollowCard formatUserName={format} fullName="Miguel Angel Duran" userName="midudev" />
+            <TwitterFollowCard formatUserName={format} fullName="Kai Cenat" userName="kaicenat" />
         </Fragment>
     )
 }
