@@ -21,6 +21,11 @@
   .tw-followCard-infoUserName {
     opacity: .6;
   }
+
+  .tw-followCard-badge{
+    vertical-align: middle;
+    padding-left: 0.5rem;
+  }
   
   .tw-followCard-avatar {
     width: 48px;
