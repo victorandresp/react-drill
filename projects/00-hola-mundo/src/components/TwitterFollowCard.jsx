@@ -2,7 +2,7 @@ export const TwitterFollowCard = ({formatUserName, fullName, userName, isFollowi
     return (
         <article className="tw-followCard">
             <header className="tw-followCard-header">
-                <img className="tw-followCard-avatar" src="https://unavatar.io/github/mdo" alt="avatar" />
+                <img className="tw-followCard-avatar" src={`https://unavatar.io/twitter/${userName}`} alt="avatar" />
                 <div className="tw-followCard-info">
                     <strong>{ fullName }</strong>
                     <span className="tw-followCard-infoUserName">{ formatUserName(userName) }</span>
