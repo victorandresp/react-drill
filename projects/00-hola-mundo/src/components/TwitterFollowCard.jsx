@@ -10,7 +10,7 @@ export const TwitterFollowCard = ({verifiedBadge, formatUserName, fullName, user
             </header>
             <aside>
                 <button className="tw-followCard-button">
-                    Seguir
+                    {isFollowing ? 'Dejar de Seguir' : 'Seguir'}
                 </button>
             </aside>
         </article>
