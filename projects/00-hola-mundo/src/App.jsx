@@ -11,17 +11,23 @@ export const App = () => {
                 formatUserName={format} 
                 fullName="Victor Andres Ponce" 
                 userName="victorandresp" 
-            />
+            >
+                <span>Victor Andres Ponce</span>
+            </TwitterFollowCard>
             <TwitterFollowCard
                 formatUserName={format}
                 fullName="Miguel Angel Duran"
                 userName="midudev"
-            />
+            >
+                <span>Migue Angel Duran</span>
+            </TwitterFollowCard>
             <TwitterFollowCard
                 formatUserName={format}
                 fullName="Kai Cenat"
                 userName="kaicenat"
-            />
+            >
+                <span>Kai Cenat</span>
+            </TwitterFollowCard>
         </>
     )
 }
