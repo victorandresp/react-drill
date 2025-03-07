@@ -4,6 +4,11 @@ import { TwitterFollowCard }  from "./components/TwitterFollowCard.jsx";
 export const App = () => {
     const format = (userName) => `@${userName}`
     const verifiedButtonElement = <img src="verified.svg" width={20} /> // elements can be passed by props to childs components
+    const  kaiCenatUser = { 
+        formatUserName: format, 
+        fullName: "Kai Cenat", 
+        userName: "kaicenat"
+    }
     return (
         <>
             <TwitterFollowCard 
@@ -21,11 +26,7 @@ export const App = () => {
             >
                 <span>Migue Angel Duran</span>
             </TwitterFollowCard>
-            <TwitterFollowCard
-                formatUserName={format}
-                fullName="Kai Cenat"
-                userName="kaicenat"
-            >
+            <TwitterFollowCard { ...kaiCenatUser }>
                 <span>Kai Cenat</span>
             </TwitterFollowCard>
         </>
