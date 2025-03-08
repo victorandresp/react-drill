@@ -10,6 +10,7 @@ export const App = () => {
         fullName: "Kai Cenat", 
         userName: "kaicenat"
     }
+    //TODO: Render with map components
     return (
         <>
             <TwitterFollowCard 
