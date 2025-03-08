@@ -1,5 +1,10 @@
 
-export const TwitterFollowCard = ({children, verifiedBadge, formatUserName, fullName, userName, isFollowing = false}) => {
+import { useState } from "react"
+
+export const TwitterFollowCard = ({children, verifiedBadge, formatUserName, fullName, userName }) => {
+    const [isFollowing, setFollow] = useState()
+    const textFollow = !isFollowing ? 'Seguir' : 'Siguiendo'
+    const buttonUnfollowClass = isFollowing ? 'is-following' : ''
     return (
         <article className="tw-followCard">
             <header className="tw-followCard-header">
@@ -10,8 +15,8 @@ export const TwitterFollowCard = ({children, verifiedBadge, formatUserName, full
                 </div>
             </header>
             <aside>
-                <button className="tw-followCard-button">
-                    {isFollowing ? 'Dejar de Seguir' : 'Seguir'}
+                <button className={"tw-followCard-button "+ buttonUnfollowClass}>
+                    {textFollow}
                 </button>
             </aside>
         </article>

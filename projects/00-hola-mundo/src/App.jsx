@@ -15,7 +15,7 @@ export const App = () => {
                 verifiedBadge={verifiedButtonElement}
                 formatUserName={format} 
                 fullName="Victor Andres Ponce" 
-                userName="victorandresp" 
+                userName="victorandresp"
             >
                 <span>Victor Andres Ponce</span>
             </TwitterFollowCard>
