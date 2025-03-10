@@ -39,7 +39,7 @@ export const App = () => {
                         <TwitterFollowCard 
                             key={user.userName}
                             userName={user.userName}
-                            verifiedBadge={user.verified && verifiedButtonElement}
+                            verifiedBadge={user.verified && verifiedButtonElement} // Note: shorthand if first value is truthy returns the second.
                             initialIsFollowing={user.isFollowing}
                             formatUserName={format}
                         >
