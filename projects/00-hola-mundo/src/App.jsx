@@ -47,7 +47,7 @@ export const App = () => {
                         </TwitterFollowCard>
                     )
                 })
-            };
+            }
         
             <TwitterFollowCard {...kaiCenatUser}>
                 <span>Kai Cenat</span>
