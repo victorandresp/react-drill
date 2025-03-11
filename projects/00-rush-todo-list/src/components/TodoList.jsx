@@ -1,11 +1,21 @@
 import { useState } from 'react'
 import ListItem from "./ListItem"
 
-function ToDoList() {
+function ToDoList({ items }) {
 
   return (
-    <>
-      <ListItem/>
+    <> 
+    {
+        items.map((item, index) =>{
+          return  (
+                <ListItem 
+                    key={index}
+                    text={item}
+                    index={index}
+                />
+            )
+        })
+    }
     </>
   )
 }

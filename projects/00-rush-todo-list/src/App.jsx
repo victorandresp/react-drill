@@ -4,15 +4,15 @@ import TodoList from "./components/TodoList"
 import './App.css'
 
 function App() {
-
+  const [items, setItems] = useState([])
   const onTextSaved = (textSaved) =>{
-    console.log("textSaved", textSaved);
+    setItems([...items, textSaved])
   }
 
   return (
     <>
       <TextBox onTextSaved={onTextSaved} />
-      <TodoList />
+      <TodoList items={items} />
     </>
   )
 }

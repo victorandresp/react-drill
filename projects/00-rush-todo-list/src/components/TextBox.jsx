@@ -9,12 +9,16 @@ function TextBox({ onTextSaved }) {
         onTextSaved(text)
         setText("")
     }
+    const enterButton = (e) =>{
+        if(e.key === 'Enter') saveText()
+    }
   return (
     <>
         <div className='flex'>
               <input
                   value={text}
                   onChange={onChangeText}
+                  onKeyUp={enterButton}
                   className="border-solid border-2 border-white"
                   type="text"
                   title='textBoxData'
