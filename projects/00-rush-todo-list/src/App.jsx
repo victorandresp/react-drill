@@ -3,7 +3,7 @@ import TextBox from "./components/TextBox"
 import TodoList from "./components/TodoList"
 import './App.css'
 
-// best time: 01:16:53 (without delete)
+// best time: 01:16:53
 function App() {
   const [items, setItems] = useState([])
   const onTextSaved = (textSaved) =>{
