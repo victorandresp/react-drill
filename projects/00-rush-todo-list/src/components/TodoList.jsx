@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ListItem from "./ListItem"
 
-function ToDoList({ items }) {
+function ToDoList({ items, onDeleteItem }) {
 
   return (
     <> 
@@ -12,6 +12,7 @@ function ToDoList({ items }) {
                     key={index}
                     text={item}
                     index={index}
+                    onDeleteItem={onDeleteItem}
                 />
             )
         })
