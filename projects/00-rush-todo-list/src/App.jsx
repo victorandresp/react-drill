@@ -5,9 +5,13 @@ import './App.css'
 
 function App() {
 
+  const onTextSaved = (textSaved) =>{
+    console.log("textSaved", textSaved);
+  }
+
   return (
     <>
-      <TextBox/>
+      <TextBox onTextSaved={onTextSaved} />
       <TodoList />
     </>
   )
