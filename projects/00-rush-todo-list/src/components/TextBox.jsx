@@ -6,8 +6,10 @@ function TextBox({ onTextSaved }) {
         setText(e.target.value)
     }
     const saveText = () => {
-        onTextSaved(text)
-        setText("")
+        if(text !== ""){
+            onTextSaved(text)
+            setText("")
+        }
     }
     const enterButton = (e) =>{
         if(e.key === 'Enter') saveText()
