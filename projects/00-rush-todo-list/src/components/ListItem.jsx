@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 function ListItem({ text, index, onDeleteItem}) {
 
   return (
