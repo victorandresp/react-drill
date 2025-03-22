@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import TableButtons from './components/TableButtons'
+import Operation from './components/Operation'
+import Result from './components/Result'
 import './App.css'
 
 function App() {
@@ -7,6 +9,8 @@ function App() {
 
   return (
     <>
+      <Operation />
+      <Result />
       <TableButtons />
     </>
   )
