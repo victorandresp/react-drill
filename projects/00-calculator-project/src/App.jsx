@@ -5,7 +5,6 @@ import Result from './components/Result'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const [ numberList, setNumberList ] = useState([])
 
   const operationNumbers = useEffect(()=>{
@@ -17,8 +16,8 @@ function App() {
   }
   return (
     <>
-      <Operation />
-      <Result />
+      <Operation numberList={numberList} />
+      <Result numberList={numberList}/>
       <TableButtons numberPressed={numberPressed}/>
     </>
   )
