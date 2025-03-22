@@ -6,11 +6,7 @@ import './App.css'
 
 function App() {
   const [ numberList, setNumberList ] = useState([])
-
-  const operationNumbers = useEffect(()=>{
-    console.log('Number changed !!', numberList);
-  }, [numberList])
- 
+  
   const numberPressed = (number) => {
     setNumberList([...numberList, number])
   }
