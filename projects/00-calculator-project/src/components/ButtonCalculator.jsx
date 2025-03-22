@@ -1,8 +1,9 @@
 
-function ButtonCalculator({ children }) {
+function ButtonCalculator({ children, numberPressed }) {
+
     return (
       <>
-        <button type="button">{ children }</button>
+        <button onClick={() => numberPressed(children)} type="button">{ children }</button>
       </>
     )
   }
