@@ -7,6 +7,10 @@ import './App.css'
 // Personal record: 54:01.82
 // Get better: installation time: 9 min
 
+// Theory snippet: Se le llama un 'Commit' en react
+// A la comparacion de los cambios del DOM al DOM virtual (DOM virtual es la copia del DOM estatico que se ve en la web)
+// Y confirmar que se efectuo un cambio en el dom.
+
 function App() {
   const [ numberList, setNumberList ] = useState([])
 
