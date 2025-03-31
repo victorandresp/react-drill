@@ -1,1 +1,1 @@
-export * from "./usetFetch"
+export * from "./useFetch"
