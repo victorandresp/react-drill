@@ -1,10 +1,7 @@
-import { useState } from 'react'
 import { useFetch } from '../hooks'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   const url = "https://meowfacts.herokuapp.com/"
   const { data, error, loading } = useFetch(url)
 
