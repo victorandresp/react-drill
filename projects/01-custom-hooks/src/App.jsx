@@ -1,10 +1,10 @@
-import { useFetch } from '../hooks'
+import { useFetch, useDarkMode } from '../hooks'
 import './App.css'
 // TODO: Create a custom hook for detect prefered theme of user an set and manipulate it by a button
 function App() {
   const url = "https://meowfacts.herokuapp.com/"
   const { data, error, loading } = useFetch(url)
-
+  const { toggleDarkMode } = useDarkMode();
   const getFunction = () =>{
     if(loading){
       return (<h2>Cargando...</h2>)
@@ -17,6 +17,7 @@ function App() {
   }
   return (
     <>
+    <button type="button" onClick={toggleDarkMode} > Change </button>
       {getFunction()}
     </>
   )
