@@ -1,6 +1,6 @@
 import { useFetch } from '../hooks'
 import './App.css'
-
+// TODO: Create a custom hook for detect prefered theme of user an set and manipulate it by a button
 function App() {
   const url = "https://meowfacts.herokuapp.com/"
   const { data, error, loading } = useFetch(url)
